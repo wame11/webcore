@@ -1,273 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebCore - Custom Web Design</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>WebCore - Custom Web Design</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+ <script src="https://cdn.tailwindcss.com"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+ <style>
+ body {
+   font-family: 'Inter', sans-serif;
+ }
+ html {
+   scroll-behavior: smooth;
+ }
+ </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <!-- === HEADER === -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0">
-                    <a href="#" class="flex items-center space-x-2 text-2xl font-bold text-indigo-600">
-                        WebCore
-                    </a>
-                </div>
+ <!-- === HEADER === -->
+ <header class="bg-white shadow-sm sticky top-0 z-50">
+ <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="flex justify-between items-center h-16">
+ <div class="flex-shrink-0">
+ <a href="#" class="flex items-center space-x-2 text-2xl font-bold text-indigo-600">
+ WebCore
+ </a>
+ </div>
 
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#services" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                        <a href="#pricing" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-                        <a href="#partners" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Partners</a>
-                        <a href="#contact" class="bg-indigo-600 text-white hover:bg-indigo-700 px-4 py-2 rounded-md text-sm font-medium shadow-md">
-                            Get Started
-                        </a>
-                    </div>
-                </div>
+ <div class="hidden md:block">
+ <div class="ml-10 flex items-baseline space-x-4">
+ <a href="#services" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+ <a href="#pricing" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+ <a href="#partners" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Partners</a>
+ <a href="#contact" class="bg-indigo-600 text-white hover:bg-indigo-700 px-4 py-2 rounded-md text-sm font-medium shadow-md">
+ Get Started
+ </a>
+ </div>
+ </div>
 
-                <div class="-mr-2 flex md:hidden">
-                    <button type="button" id="mobile-menu-button" class="bg-slate-100 inline-flex items-center justify-center p-2 rounded-md text-slate-500 hover:text-slate-800 hover:bg-slate-200">
-                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
+ <div class="-mr-2 flex md:hidden">
+ <button type="button" id="mobile-menu-button" class="bg-slate-100 inline-flex items-center justify-center p-2 rounded-md text-slate-500 hover:text-slate-800 hover:bg-slate-200">
+ <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+ </svg>
+ </button>
+ </div>
+ </div>
+ </nav>
 
-        <div class="md:hidden hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#services" class="text-slate-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="#pricing" class="text-slate-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
-                <a href="#partners" class="text-slate-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Partners</a>
-                <a href="#contact" class="bg-indigo-600 text-white hover:bg-indigo-700 block px-3 py-2 rounded-md text-base font-medium">Get Started</a>
-            </div>
-        </div>
-    </header>
+ <div class="md:hidden hidden" id="mobile-menu">
+ <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+ <a href="#services" class="text-slate-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+ <a href="#pricing" class="text-slate-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+ <a href="#partners" class="text-slate-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Partners</a>
+ <a href="#contact" class="bg-indigo-600 text-white hover:bg-indigo-700 block px-3 py-2 rounded-md text-base font-medium text-center">Get Started</a>
+ </div>
+ </div>
+ </header>
 
-    <!-- === MAIN CONTENT === -->
-    <main>
+ <!-- === MAIN CONTENT === -->
+ <main>
 
-        <!-- === HERO === -->
-        <section class="bg-white">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-                    Clean, Fast, & Custom-Built HTML Websites
-                </h1>
-                <p class="mt-6 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-                    I create high-quality, mobile-friendly websites for small businesses, synagogues, churches, and more.
-                </p>
-                <a href="#pricing" class="mt-10 inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-lg hover:bg-indigo-700">
-                    View Packages
-                </a>
-            </div>
-        </section>
+ <!-- === HERO === -->
+ <section class="bg-white">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center">
+ <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+ Clean, Fast, & Custom-Built HTML Websites
+ </h1>
+ <p class="mt-6 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+ I create high-quality, mobile-friendly websites for small businesses, synagogues, churches, and more.
+ </p>
+ <a href="#pricing" class="mt-10 inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-lg hover:bg-indigo-700">
+ View Packages
+ </a>
+ </div>
+ </section>
 
-        <!-- === SERVICES === -->
-        <section id="services" class="bg-slate-100 py-20 md:py-24">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Who We Serve</h2>
-                    <p class="mt-4 text-lg text-slate-600">We specialize in lightweight, affordable sites for:</p>
-                </div>
+ <!-- === SERVICES === -->
+ <section id="services" class="bg-slate-100 py-20 md:py-24">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="text-center mb-16">
+ <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Who We Serve</h2>
+ <p class="mt-4 text-lg text-slate-600">We specialize in lightweight, affordable sites for:</p>
+ </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-slate-200">
-                        <div class="text-5xl text-indigo-600 mb-4">🛍️</div>
-                        <h3 class="text-2xl font-bold text-slate-900">Small Businesses</h3>
-                        <p class="mt-2 text-slate-600">Landing pages, portfolios, and more.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-slate-200">
-                        <div class="text-5xl text-indigo-600 mb-4">✡️</div>
-                        <h3 class="text-2xl font-bold text-slate-900">Synagogues</h3>
-                        <p class="mt-2 text-slate-600">Community hubs and booking systems.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-slate-200">
-                        <div class="text-5xl text-indigo-600 mb-4">⛪</div>
-                        <h3 class="text-2xl font-bold text-slate-900">Churches & More</h3>
-                        <p class="mt-2 text-slate-600">Service schedules and community updates.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+ <div class="bg-white p-8 rounded-lg shadow-md border border-slate-200">
+ <div class="text-5xl text-indigo-600 mb-4">🛍️</div>
+ <h3 class="text-2xl font-bold text-slate-900">Small Businesses</h3>
+ <p class="mt-2 text-slate-600">Landing pages, portfolios, and more.</p>
+ </div>
+ <div class="bg-white p-8 rounded-lg shadow-md border border-slate-200">
+ <div class="text-5xl text-indigo-600 mb-4">✡️</div>
+ <h3 class="text-2xl font-bold text-slate-900">Synagogues</h3>
+ <p class="mt-2 text-slate-600">Community hubs and booking systems.</p>
+ </div>
+ <div class="bg-white p-8 rounded-lg shadow-md border border-slate-200">
+ <div class="text-5xl text-indigo-600 mb-4">⛪</div>
+ <h3 class="text-2xl font-bold text-slate-900">Churches & More</h3>
+ <p class="mt-2 text-slate-600">Service schedules and community updates.</p>
+ </div>
+ </div>
+ </div>
+ </section>
 
+ <!-- === PRICING === -->
+ <section id="pricing" class="bg-slate-100 py-20 md:py-24">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="text-center mb-16">
+ <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Simple, Transparent Pricing</h2>
+ <p class="mt-4 text-lg text-slate-600">Choose the package that's right for you.</p>
+ </div>
 
-        <!-- === PRICING === -->
-        <section id="pricing" class="bg-slate-100 py-20 md:py-24">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Simple, Transparent Pricing</h2>
-                    <p class="mt-4 text-lg text-slate-600">Choose the package that's right for you.</p>
-                </div>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                <!-- Pricing Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+ <!-- STANDARD -->
+ <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col border border-slate-200">
+ <h3 class="text-2xl font-bold text-slate-900">Standard</h3>
+ <p class="mt-4 text-4xl font-extrabold text-slate-900">£25</p>
+ <p class="mt-2 text-sm text-slate-500">One-page website</p>
+ <p class="mt-4 text-base text-slate-600 font-semibold">
+ Turnaround: <span class="text-indigo-600">Up to 5 days</span>
+ </p>
+ <ul class="mt-6 space-y-3 text-slate-700 flex-grow">
+ <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>1 Page Website</li>
+ <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Mobile Responsive</li>
+ <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>3 Rounds of Revisions</li>
+ </ul>
+ <a href="mailto:ethansamuelross@icloud.com?subject=Website Inquiry - Standard Package" class="mt-8 block w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 text-center">
+ Get Started
+ </a>
+ </div>
 
-                    <!-- STANDARD -->
-                    <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col border border-slate-200">
-                        <h3 class="text-2xl font-bold text-slate-900">Standard</h3>
-                        <p class="mt-4 text-4xl font-extrabold text-slate-900">£25</p>
-                        <p class="mt-2 text-sm text-slate-500">One-page website</p>
-                        <p class="mt-4 text-base text-slate-600 font-semibold">
-                            Turnaround: <span class="text-indigo-600">Up to 5 days</span>
-                        </p>
-                        <ul class="mt-6 space-y-3 text-slate-700 flex-grow">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
-                                1 Page Website
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
-                                Mobile Responsive
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
-                                3 Rounds of Revisions
-                            </li>
-                        </ul>
-                        <a href="mailto:ethansamuelross@icloud.com?subject=Website Inquiry - Standard Package" class="mt-8 block w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700">
-                            Get Started
-                        </a>
-                    </div>
+ <!-- PREMIUM -->
+ <div class="bg-white rounded-2xl shadow-2xl p-8 flex flex-col border-4 border-indigo-600 relative">
+ <span class="absolute top-0 -translate-y-1/2 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
+ <h3 class="text-2xl font-bold text-indigo-600">Premium</h3>
+ <p class="mt-4 text-4xl font-extrabold text-slate-900">£50</p>
+ <p class="mt-2 text-sm text-slate-500">Multi-page site</p>
+ <p class="mt-4 text-base text-slate-600 font-semibold">Turnaround: <span class="text-indigo-600">Up to 1.5 weeks</span></p>
+ <ul class="mt-6 space-y-3 text-slate-700 flex-grow">
+ <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Up to 3 Pages</li>
+ <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Custom Design Elements</li>
+ <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Photo Gallery Integration</li>
+ <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>5 Rounds of Revisions</li>
+ </ul>
+ <a href="mailto:ethansamuelross@icloud.com?subject=Website Inquiry - Premium Package" class="mt-8 block w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 text-center">
+ Get Started
+ </a>
+ </div>
 
-                    <!-- PREMIUM -->
-                    <div class="bg-white rounded-2xl shadow-2xl p-8 flex flex-col border-4 border-indigo-600 relative">
-                        <span class="absolute top-0 -translate-y-1/2 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
-                        <h3 class="text-2xl font-bold text-indigo-600">Premium</h3>
-                        <p class="mt-4 text-4xl font-extrabold text-slate-900">£50</p>
-                        <p class="mt-2 text-sm text-slate-500">Multi-page site</p>
-                        <p class="mt-4 text-base text-slate-600 font-semibold">Turnaround: <span class="text-indigo-600">Up to 1.5 weeks</span></p>
+ <!-- PLATINUM -->
+ <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col border border-slate-200">
+ <h3 class="text-2xl font-bold text-slate-900">Platinum</h3>
+ <p class="mt-4 text-4xl font-extrabold text-slate-900">£75</p>
+ <p class="mt-2 text-sm text-slate-500">Bespoke solution</p>
+ <p class="mt-4 text-base text-slate-600 font-semibold">Turnaround: <span class="text-indigo-600">Up to 2 weeks</span></p>
+ <ul class="mt-6 space-y-3 text-slate-700 flex-grow">
+ <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Up to 5 Pages</li>
+ <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Fully Bespoke Design</li>
+ <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Unlimited Revisions</li>
+ <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Priority Support</li>
+ </ul>
+ <a href="mailto:ethansamuelross@icloud.com?subject=Website Inquiry - Platinum Package" class="mt-8 block w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 text-center">
+ Get Started
+ </a>
+ </div>
+ </div>
 
-                        <ul class="mt-6 space-y-3 text-slate-700 flex-grow">
-                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Up to 3 Pages</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Custom Design Elements</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Photo Gallery Integration</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>5 Rounds of Revisions</li>
-                        </ul>
+ <p class="text-center mt-10 text-slate-600 text-base font-medium">
+ We aim to respond to all enquiries within <span class="text-indigo-600 font-semibold">15 hours</span>.
+ </p>
 
-                        <a href="mailto:ethansamuelross@icloud.com?subject=Website Inquiry - Premium Package" class="mt-8 block w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700">
-                            Get Started
-                        </a>
-                    </div>
+ </div>
+ </section>
 
-                    <!-- PLATINUM -->
-                    <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col border border-slate-200">
-                        <h3 class="text-2xl font-bold text-slate-900">Platinum</h3>
-                        <p class="mt-4 text-4xl font-extrabold text-slate-900">£75</p>
-                        <p class="mt-2 text-sm text-slate-500">Bespoke solution</p>
-                        <p class="mt-4 text-base text-slate-600 font-semibold">Turnaround: <span class="text-indigo-600">Up to 2 weeks</span></p>
+ <!-- === PARTNERS === -->
+ <section id="partners" class="bg-white py-20">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+ <h2 class="text-3xl font-bold text-slate-900">A Proud Partner</h2>
+ <p class="mt-4 text-lg text-slate-600">I've had the pleasure of working with fantastic clients:</p>
+ <div class="mt-8">
+ <a href="https://wame11.github.io/bookmykiddushhw/" class="text-2xl font-semibold text-indigo-600 italic hover:underline">
+ Hadley Wood Synagogue
+ </a>
+ </div>
+ </div>
+ </section>
 
-                        <ul class="mt-6 space-y-3 text-slate-700 flex-grow">
-                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Up to 5 Pages</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Fully Bespoke Design</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Unlimited Revisions</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>Priority Support</li>
-                        </ul>
+ <!-- === CONTACT === -->
+ <section id="contact" class="bg-slate-100 py-20 md:py-24">
+ <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+ <h2 class="text-3xl font-bold text-slate-900">Ready to Start Your Project?</h2>
+ <p class="mt-4 text-lg text-slate-600">It's easy to get started.</p>
 
-                        <a href="mailto:ethansamuelross@icloud.com?subject=Website Inquiry - Platinum Package" class="mt-8 block w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700">
-                            Get Started
-                        </a>
-                    </div>
-                </div>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
+ <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+ <div class="text-indigo-600 font-bold text-4xl mb-2">1.</div>
+ <h3 class="text-xl font-semibold">Choose Your Package</h3>
+ </div>
+ <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+ <div class="text-indigo-600 font-bold text-4xl mb-2">2.</div>
+ <h3 class="text-xl font-semibold">Send an Inquiry</h3>
+ </div>
+ <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+ <div class="text-indigo-600 font-bold text-4xl mb-2">3.</div>
+ <h3 class="text-xl font-semibold">Let's Build!</h3>
+ </div>
+ </div>
 
-                <!-- ⭐ NEW LINE ADDED BELOW ⭐ -->
-                <p class="text-center mt-10 text-slate-600 text-base font-medium">
-                    We aim to respond to all enquiries within <span class="text-indigo-600 font-semibold">15 hours</span>.
-                </p>
+ <div class="mt-16">
+ <h3 class="text-2xl font-semibold text-slate-900">Questions?</h3>
+ <p class="mt-2 text-lg">
+ Email me at <br>
+ <a href="mailto:ethansamuelross@icloud.com" class="text-indigo-600 hover:underline">ethansamuelross@icloud.com</a>
+ </p>
+ <p class="mt-4 text-sm text-slate-500">
+ Payment Methods: <span class="font-semibold">Revolut, PayPal, UK Bank Transfer</span>
+ </p>
+ </div>
+ </div>
+ </section>
 
-            </div>
-        </section>
+ </main>
 
-        <!-- === PARTNERS === -->
-        <section id="partners" class="bg-white py-20">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-slate-900">A Proud Partner</h2>
-                <p class="mt-4 text-lg text-slate-600">I've had the pleasure of working with fantastic clients:</p>
-                <div class="mt-8">
-                    <a href="https://wame11.github.io/bookmykiddushhw/" class="text-2xl font-semibold text-indigo-600 italic hover:underline">
-                        Hadley Wood Synagogue
-                    </a>
-                </div>
-            </div>
-        </section>
+ <!-- === FOOTER === -->
+ <footer class="bg-slate-900 text-slate-400 py-12">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+ <p>&copy; 2025 WebCore. All rights reserved.</p>
+ <p class="mt-2 text-sm">
+ <a href="mailto:ethansamuelross@icloud.com" class="hover:text-white hover:underline">
+ ethansamuelross@icloud.com
+ </a>
+ </p>
+ </div>
+ </footer>
 
-        <!-- === CONTACT === -->
-        <section id="contact" class="bg-slate-100 py-20 md:py-24">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-slate-900">Ready to Start Your Project?</h2>
-                <p class="mt-4 text-lg text-slate-600">It's easy to get started.</p>
+ <script>
+ document.getElementById('mobile-menu-button').addEventListener('click', function() {
+ var menu = document.getElementById('mobile-menu');
+ menu.classList.toggle('hidden');
+ });
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
-                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                        <div class="text-indigo-600 font-bold text-4xl mb-2">1.</div>
-                        <h3 class="text-xl font-semibold">Choose Your Package</h3>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                        <div class="text-indigo-600 font-bold text-4xl mb-2">2.</div>
-                        <h3 class="text-xl font-semibold">Send an Inquiry</h3>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                        <div class="text-indigo-600 font-bold text-4xl mb-2">3.</div>
-                        <h3 class="text-xl font-semibold">Let's Build!</h3>
-                    </div>
-                </div>
-
-                <div class="mt-16">
-                    <h3 class="text-2xl font-semibold text-slate-900">Questions?</h3>
-                    <p class="mt-2 text-lg">
-                        Email me at 
-                        <a href="mailto:ethansamuelross@icloud.com" class="text-indigo-600 hover:underline">ethansamuelross@icloud.com</a>
-                    </p>
-                    <p class="mt-4 text-sm text-slate-500">
-                        Payment Methods: <span class="font-semibold">Revolut, PayPal, UK Bank Transfer</span>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- === FOOTER === -->
-    <footer class="bg-slate-900 text-slate-400 py-12">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2025 WebCore. All rights reserved.</p>
-            <p class="mt-2 text-sm">
-                <a href="mailto:ethansamuelross@icloud.com" class="hover:text-white hover:underline">
-                    ethansamuelross@icloud.com
-                </a>
-            </p>
-        </div>
-    </footer>
-
-    <script>
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            var menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
-
-        document.querySelectorAll('#mobile-menu a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                var menu = document.getElementById('mobile-menu');
-                menu.classList.add('hidden');
-            });
-        });
-    </script>
+ document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+ link.addEventListener('click', function() {
+ var menu = document.getElementById('mobile-menu');
+ menu.classList.add('hidden');
+ });
+ });
+ </script>
 
 </body>
 </html>
